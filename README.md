@@ -5,10 +5,18 @@ Exercise on saving memory with a limited size queue.
 
 On the ```src/``` folder:
 
-```python3 webcrawler.py [1] [2]```
+```
+python3 webcrawler.py [1] [2]
+```
 
 [1]: Maximum number of entries on visited set.
 
 [2]: Number of sites our bot will try to "visit".
 
 **Recommended values for demonstration:** ```python3 webcrawler.py 500 3000```
+
+# Tests
+
+To run tests, go to the ```src/``` folder and run:
+
+```python3 tests.py```
