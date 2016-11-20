@@ -39,7 +39,7 @@ class VisitedSet:
 		return url
 		# We cut out the first part of our URL. That's not very necessary, but I wanted to give our generateID function
 		# strings that were as different as possible, to avoid md5 collision. Of course, the chances of collision happening
-		# is very either way.
+		# is very low either way.
 
 	def generateID (self,url):
 		id = hashlib.md5(url.encode('utf-8')).hexdigest()
