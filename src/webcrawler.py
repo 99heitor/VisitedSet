@@ -15,6 +15,8 @@ def crawlerSim(maxvisited,urlnumber):
 			print ('Memory: {0} bytes. Visiting {1}'.format(sys.getsizeof(visitedset.visited), currentURL.strip("\n")))
 	return visitedset
 	# This function simulates a bot that surfs the web and uses our VisitedSet to check if some URL was recently visited.
+	# Since each "alreadyVisited" has complexity O(maxvisited), this function has complexity O(maxvisited*urlnumber).
+	# I added a constant time wait at each loop to simulate a "visit", and to allow us to read the output in time.
 
 
 def getRandomLine(file,name):

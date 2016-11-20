@@ -21,8 +21,8 @@ class VisitedSet:
 			self.visited.append(newid)
 		return False
 		# alredyVisited is our main function. It prepares the URL to be added to the visited queue, then checks if it's already there.
-		# It returns True if the URL it receives is alredy on our Visited queue. If it is not, the it is added and then returns False. 
-		# This is the worst performing section, since it performs a linear search on an unsorted array. (O(n), where n is the current is of the queue). 
+		# It returns True if the URL it receives is alredy on our Visited queue. If it is not, it is added and then returns False. 
+		# This is the worst performing section, since it performs a linear search on an unsorted array. (O(n), where "n" is the current size of the queue). 
 		# There is a reason for this design:
 		# Python's [set] collection (https://docs.python.org/2/library/sets.html) supports constant time member checking, but uses much more space
 		# since its underlying implementation makes use of hashing. That was my first idea, but since our main constraint is space and not time,

@@ -29,7 +29,7 @@ def testVisitedQueueMaxSize():
 	else:
 		partialTest = False
 
-	#If we add another URL, the queue size should still be 3.
+	# If we add another URL, the queue size should still be 3.
 
 	visitedset.alreadyVisited("www.facebook.com")
 
@@ -47,7 +47,7 @@ def testVisitedRemoveOldestEntry():
 	visitedset.alreadyVisited("www.yahoo.com")
 	visitedset.alreadyVisited("www.bing.com")
 
-	#If we add another URL, www.google.com should be removed, since the max queue size is 3.
+	# If we add another URL, www.google.com should be removed, since the max queue size is 3.
 
 	visitedset.alreadyVisited("www.facebook.com")
 
